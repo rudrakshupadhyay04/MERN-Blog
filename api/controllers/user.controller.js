@@ -12,7 +12,7 @@ export const updateUser = async (req, res, next) => {
         return next(errorHandler(404, "You are not allowed to update this user"));
     }
     if(req.body.password){
-        if(req.body.password < 6){
+        if(req.body.password.length < 6){
             return next(errorHandler(400, "Password must be at least 6 characters"));
         }
         req.body.password = bcryptjs.hashSync(req.body.password, 10);
@@ -33,7 +33,7 @@ export const updateUser = async (req, res, next) => {
         try {
             const updateUser = await User.findByIdAndUpdate(req.params.userId, {
                 $set: {
-                    username: req.user.username,
+                    username: req.body.username,
                     email: req.body.email,
                     profilePicture: req.body.profilePicture,
                     password: req.body.password,
