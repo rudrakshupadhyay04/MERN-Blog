@@ -192,17 +192,17 @@ export default function DashProfile() {
       </div>
       {updateUserSuccess && (
         <Alert color='success' className='mt-5'>
-          {updateUserSuccess};
+          {updateUserSuccess}
         </Alert>
       )}
       {updateUserError && (
         <Alert color='failure' className='mt-5'>
-          {updateUserError};
+          {updateUserError}
         </Alert>
       )}
       {error && (
         <Alert color='failure' className='mt-5'>
-          {error};
+          {error}
         </Alert>
       )}
       <Modal show={showModal} onClose={() => setShowModal(false)} popup size='md'>
