@@ -1,4 +1,4 @@
-import { Table, TableHeadCell } from "flowbite-react";
+import { Table } from "flowbite-react";
 import { useEffect, useState } from "react";
 import {useSelector} from 'react-redux';
 import { Link } from "react-router-dom";
