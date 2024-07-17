@@ -11,6 +11,7 @@ import PrivateRoute from './Components/PrivateRoute';
 import OnlyyAdminPrivateRoute from './Components/OnlyAdminPrivateRoute.jsx';
 import CreatePost from './pages/CreatePost';
 import UpdatePost from './pages/UpdatedPost.jsx';
+import PostPage from './pages/PostPage.jsx';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path='/projects' element={<Projects/>} />
         <Route path='/sign-in' element={<SignIn/>} />
         <Route path='/sign-up' element={<SignUp/>} />
+        <Route path='/post/:postSlug' element={<PostPage/>} />
       </Routes>
     <Footer/>
     </BrowserRouter>
