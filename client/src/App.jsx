@@ -12,10 +12,12 @@ import OnlyyAdminPrivateRoute from './Components/OnlyAdminPrivateRoute.jsx';
 import CreatePost from './pages/CreatePost';
 import UpdatePost from './pages/UpdatedPost.jsx';
 import PostPage from './pages/PostPage.jsx';
+import ScrollToTop from './Components/ScrollToTop.jsx';
 
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
