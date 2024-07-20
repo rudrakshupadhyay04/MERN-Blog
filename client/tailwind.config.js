@@ -9,6 +9,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [flowbite.plugin(), ('tailwind-scrollbar')],
-  // plugins: [require('flowbite/plugin'), require('tailwind-scrollbar')],
+  // plugins: [flowbite.plugin(), ('tailwind-scrollbar')],
+  plugins: [require('flowbite/plugin'), require('tailwind-scrollbar'),],
 }
